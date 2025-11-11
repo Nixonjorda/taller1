@@ -1,15 +1,25 @@
-public class Cocodrilo extends Reptil {
-    private int horasBajoAgua;
-    private int fuerzaMordida;
+package EJER2ZOOLOGICO;
 
-    public Cocodrilo(int id, String nombre, int edad, double peso, String fechaIngreso,
+public class cocodrilo extends Reptil {
+    public int horasBajoAgua;
+    public int fuerzaMordida;
+
+    public cocodrilo(int id, String nombre, int edad, double peso, String fechaIngreso,int temperaturaAmbiente,
                      int horasBajoAgua, int fuerzaMordida) {
-        super(id, nombre, "Cocodrilo", edad, peso, fechaIngreso, "Duras", false, 70.0);
+        super(id, nombre, edad, peso, fechaIngreso, temperaturaAmbiente);
         this.horasBajoAgua = horasBajoAgua;
         this.fuerzaMordida = fuerzaMordida;
     }
 
     public void atacar() {
-        System.out.println(nombre + " ataca con una mordida de " + fuerzaMordida + " PSI.");
-    }
+        System.out.println(nombre + " ataca con una mordida poderosa.");
+    }
+
+    public void nadarFurtivo() {
+        System.out.println(nombre + " nada sigilosamente bajo el agua.");
+    }
+
+    public void acechar() {
+        System.out.println(nombre + " acecha a su presa desde el agua.");
+    }
 }
