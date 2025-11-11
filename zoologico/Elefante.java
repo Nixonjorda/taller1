@@ -1,10 +1,12 @@
+package EJER2ZOOLOGICO;
+
 public class Elefante extends Mamifero {
-    private double tamanoOrejas;
-    private String capacidadMemoria;
+    public double tamanoOrejas;
+    public String capacidadMemoria;
 
     public Elefante(int id, String nombre, int edad, double peso, String fechaIngreso,
                     double tamanoOrejas, String capacidadMemoria) {
-        super(id, nombre, "Elefante", edad, peso, fechaIngreso, "Grueso", 22, 36.8);
+        super(id, nombre, "Elefante", edad, peso, fechaIngreso, "Grueso", 22, 36.5);
         this.tamanoOrejas = tamanoOrejas;
         this.capacidadMemoria = capacidadMemoria;
     }
@@ -18,6 +20,6 @@ public class Elefante extends Mamifero {
     }
 
     public void comunicarse() {
-        System.out.println(nombre + " emite sonidos para comunicarse.");
-    }
+        System.out.println(nombre + " se comunica con sonidos graves.");
+    }
 }
