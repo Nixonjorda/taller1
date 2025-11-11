@@ -1,23 +1,24 @@
-// Hereda de la clase Usuario
+package EJER2ZOOLOGICO;
+
 public class Administrador extends Usuario {
-    private String horarioTrabajo;
 
-    // Constructor
-    public Administrador(String nombre, int id, String password, String horarioTrabajo) {
-        super(nombre, id, password); // Llamada al constructor del padre (Usuario)
-        this.horarioTrabajo = horarioTrabajo;
+    public Administrador(String nombre, String usuario, String contrasena) {
+        super(nombre, usuario, contrasena);
     }
 
-    // Métodos propios del Administrador
-    public void registrarAnimal() {
-        System.out.println(nombre + " ha registrado un nuevo animal.");
+    public void registrarCuidador() {
+        System.out.println(nombre + " ha registrado un nuevo cuidador.");
     }
 
-    public void borrarAnimal() {
-        System.out.println(nombre + " ha eliminado un animal del sistema.");
+    public void administrarUsuarios() {
+        System.out.println(nombre + " está administrando los usuarios.");
     }
 
-    public void mostrarAnimal() {
-        System.out.println(nombre + " está mostrando la lista de animales.");
-    }
+    public void consultarReportes() {
+        System.out.println(nombre + " consulta los reportes del zoológico.");
+    }
+
+    public void eliminarOModificar() {
+        System.out.println(nombre + " elimina o modifica registros del sistema.");
+    }
 }
