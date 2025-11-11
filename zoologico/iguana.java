@@ -1,19 +1,21 @@
+package EJER2ZOOLOGICO;
+
 public class Iguana extends Reptil {
-    private String colorPiel;
-    private double tamanoCola;
+    public String cambiarPiel;
+    public double tamanoCola;
 
     public Iguana(int id, String nombre, int edad, double peso, String fechaIngreso,
-                  String colorPiel, double tamanoCola) {
-        super(id, nombre, "Iguana", edad, peso, fechaIngreso, "Suaves", false, 65.0);
-        this.colorPiel = colorPiel;
+                  String cambiarPiel, double tamanoCola) {
+        super(id, nombre, edad, peso, fechaIngreso, "Pequeñas", false, 50.0);
+        this.cambiarPiel = cambiarPiel;
         this.tamanoCola = tamanoCola;
     }
 
     public void camuflarse() {
-        System.out.println(nombre + " se camufla cambiando su color a " + colorPiel);
+        System.out.println(nombre + " se camufló con su entorno para protegerse.");
     }
 
-    public void soltarCola() {
-        System.out.println(nombre + " ha soltado su cola para escapar del peligro.");
-    }
+    public void mudarPiel() {
+        System.out.println(nombre + " está mudando la piel. Proceso: " + cambiarPiel);
+    }
 }
