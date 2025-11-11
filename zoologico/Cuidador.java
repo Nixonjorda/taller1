@@ -1,23 +1,24 @@
-// Hereda de Usuario
-public class Administrador extends Usuario {
-    private String horarioTrabajo;
+package EJER2ZOOLOGICO;
 
-    // Constructor
-    public Administrador(String nombre, int id, String password, String horarioTrabajo) {
-        super(nombre, id, password); // Llama al constructor de Usuario
-        this.horarioTrabajo = horarioTrabajo;
+public class Cuidador extends Usuario {
+
+    public Cuidador(String nombre, String usuario, String contrasena) {
+        super(nombre, usuario, contrasena);
     }
 
-    // Métodos propios
-    public void registrarAnimal() {
-        System.out.println(nombre + " ha registrado un nuevo animal.");
+    public void registrarAnimal(Animal a) {
+        a.registrar();
     }
 
-    public void borrarAnimal() {
-        System.out.println(nombre + " ha eliminado un animal del sistema.");
+    public void alimentarAnimal(Animal a) {
+        a.comer();
     }
 
-    public void mostrarAnimal() {
-        System.out.println(nombre + " está mostrando la lista de animales.");
-    }
+    public void verificarSalud(Animal a) {
+        a.verificarSalud();
+    }
+
+    public void actualizarFicha(Animal a) {
+        a.actualizarregistro(a.nombre);
+    }
 }
