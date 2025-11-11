@@ -1,7 +1,9 @@
+package EJER2ZOOLOGICO;
+
 public class Mamifero extends Animal {
-    protected String tipoPelo;
-    protected int gestacionMeses;
-    protected double temperaturaCorporal;
+    public String tipoPelo;
+    public int gestacionMeses;
+    public double temperaturaCorporal;
 
     public Mamifero(int id, String nombre, String especie, int edad, double peso, String fechaIngreso,
                     String tipoPelo, int gestacionMeses, double temperaturaCorporal) {
@@ -20,6 +22,6 @@ public class Mamifero extends Animal {
     }
 
     public void desplazarse() {
-        System.out.println(nombre + " se está desplazando.");
-    }
+        System.out.println(nombre + " se desplaza caminando.");
+    }
 }
