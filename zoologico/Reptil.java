@@ -1,25 +1,23 @@
-public class Reptil extends Animal {
-    protected String tipoEscamas;
-    protected boolean esVenenoso;
-    protected double humedadNecesaria;
+package EJER2ZOOLOGICO;
 
-    public Reptil(int id, String nombre, String especie, int edad, double peso, String fechaIngreso,
-                  String tipoEscamas, boolean esVenenoso, double humedadNecesaria) {
-        super(id, nombre, especie, edad, peso, fechaIngreso);
+public class Reptil extends Animal {
+    public String tipoEscamas;
+    public boolean esVenenoso;
+    public double temperaturaAmbiente;
+
+    public Reptil(int id, String nombre, int edad, double peso, String fechaIngreso,
+                  String tipoEscamas, boolean esVenenoso, double temperaturaAmbiente) {
+        super(id, nombre, edad, peso, fechaIngreso);
         this.tipoEscamas = tipoEscamas;
         this.esVenenoso = esVenenoso;
-        this.humedadNecesaria = humedadNecesaria;
-    }
-
-    public void cambiarPiel() {
-        System.out.println(nombre + " está mudando su piel.");
+        this.temperaturaAmbiente = temperaturaAmbiente;
     }
 
     public void tomarSol() {
-        System.out.println(nombre + " toma el sol para calentarse.");
+        System.out.println(nombre + " está tomando el sol para mantener su temperatura corporal.");
     }
 
-    public void ocultarse() {
-        System.out.println(nombre + " se oculta entre las rocas.");
-    }
+    public void arrastrarse() {
+        System.out.println(nombre + " se está arrastrando lentamente por el suelo.");
+    }
 }
