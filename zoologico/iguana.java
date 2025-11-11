@@ -1,10 +1,10 @@
 package EJER2ZOOLOGICO;
 
-public class Iguana extends Reptil {
+public class iguana extends Reptil {
     public String cambiarPiel;
     public double tamanoCola;
 
-    public Iguana(int id, String nombre, int edad, double peso, String fechaIngreso,
+    public iguana(int id, String nombre, int edad, double peso, String fechaIngreso,
                   String cambiarPiel, double tamanoCola) {
         super(id, nombre, edad, peso, fechaIngreso, "Pequeñas", false, 50.0);
         this.cambiarPiel = cambiarPiel;
